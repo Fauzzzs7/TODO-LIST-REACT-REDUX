@@ -13,22 +13,22 @@ export const ButtonFilter = () => {
       <div className={style.container}>
         <Button
           onClick={(e) => setFilterState((prev) => "ALL")}
-          className={`${style.button} ${
-            filterState === "ALL" ? " bg-green-600 " : ""
+          className={`${style.button} + ${
+            filterState === "ALL" ? " !bg-green-600 " : ""
           }`}>
-          ALL
+          All
         </Button>
         <Button
           onClick={(e) => setFilterState((prev) => "COMPLETED")}
-          className={`${style.button}  ${
-            filterState === "COMPLETED" ? " bg-green-600 " : ""
+          className={`${style.button} + ${
+            filterState === "COMPLETED" ? " !bg-green-600 " : ""
           }`}>
           COMPLETED
         </Button>
         <Button
           onClick={(e) => setFilterState((prev) => "ACTIVE")}
-          className={`${style.button}  ${
-            filterState === "ACTIVE" ? " bg-green-600 " : ""
+          className={`${style.button} + ${
+            filterState === "ACTIVE" ? " !bg-green-600 " : ""
           }`}>
           ACTIVE
         </Button>
