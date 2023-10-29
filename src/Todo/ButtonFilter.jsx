@@ -15,21 +15,21 @@ export const ButtonFilter = () => {
           onClick={(e) => setFilterState((prev) => "ALL")}
           className={`${style.button} ${
             filterState === "ALL" ? " bg-green-600 " : ""
-          }hover:bg-green-700 active:bg-green-800`}>
-          All
+          }`}>
+          ALL
         </Button>
         <Button
           onClick={(e) => setFilterState((prev) => "COMPLETED")}
-          className={`${style.button} ${
-            filterState === "COMPLETED" ? "bg-green-600" : ""
-          } hover:bg-green-700 active:bg-green-800`}>
+          className={`${style.button}  ${
+            filterState === "COMPLETED" ? " bg-green-600 " : ""
+          }`}>
           COMPLETED
         </Button>
         <Button
           onClick={(e) => setFilterState((prev) => "ACTIVE")}
           className={`${style.button}  ${
-            filterState === "ACTIVE" ? " !bg-green-600 " : ""
-          }hover:bg-green-700 active:bg-green-800`}>
+            filterState === "ACTIVE" ? " bg-green-600 " : ""
+          }`}>
           ACTIVE
         </Button>
       </div>
